@@ -30,10 +30,14 @@ keymap.set('n', '<leader>Q' , ':qa!<CR>' , { noremap = true, silent = true})
 
 
 -- Buffer Management Shortcuts
-vim.keymap.set('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
+keymap.set('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
+keymap.set('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })
+keymap.set('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
+keymap.set('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
+
+---- Buffer Close All, Except Current Shortcut
+keymap.set('n', '<leader>o', '<C-w>o', { noremap = true, silent = true })
+
 
 
 
