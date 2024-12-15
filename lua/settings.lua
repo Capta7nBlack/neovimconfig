@@ -2,7 +2,7 @@
 local opt = vim.opt
 
 -- sets the line counter
-opt.number = true
+opt.number = true 
 
 -- sets the current directory to neovim, instead of terminal 
 opt.autochdir = true
@@ -10,6 +10,23 @@ opt.autochdir = true
 -- swapfile error disregardment 
 opt.swapfile = false
 
+-- Transparent background
+vim.cmd("highlight Normal guibg=NONE ctermbg=NONE")
+vim.cmd("highlight NonText guibg=NONE ctermbg=NONE")
+opt.termguicolors = true
 
+-- Search settings
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = false
+opt.wrap = true
+opt.breakindent = true
 
+-- Virtual line mark
+opt.showbreak = ">>>"
 
+-- ShowBreak >>> Different Color
+vim.api.nvim_set_hl(0, "ShowBreak", { fg = "#FF5733", bold = true})
+vim.cmd[[highlight link ShowBreak NonText]]
+
+opt.timeoutlen = 100
