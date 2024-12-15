@@ -4,6 +4,36 @@ keymap = vim.keymap
 g.mapleader = " "
 g.maplocalleader = " "
 
+-- Exlorer Jump Instructions
+---- Explorer Opening Shortcut
 keymap.set('n', '<leader>ee', ':30vs.<CR>', { noremap = true, silent = true })
+
+-------- Explorer to Config Folder
 keymap.set('n', '<leader>ec', ':EditConfig<CR>', { noremap = true, silent = true })
+
+-------- Explorer to disk D
 keymap.set('n', '<leader>ed', ':Cdd<CR>', { noremap = true, silent = true })
+
+
+-- Quit and Save Shortcuts
+---- Quit Regardless
+keymap.set('n', '<leader>qq' , ':q!<CR>' , { noremap = true, silent = true})
+
+---- Write With no Quit
+keymap.set('n', '<leader>ww' , ':w<CR>' , { noremap = true, silent = true})
+
+-------- Write and Quite
+keymap.set('n', '<leader>wq' , ':wq<CR>' , { noremap = true, silent = true})
+
+-------- Quit All Regardless
+keymap.set('n', '<leader>Q' , ':qa!<CR>' , { noremap = true, silent = true})
+
+
+-- Buffer Management Shortcuts
+vim.keymap.set('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
+
+
+
