@@ -25,8 +25,3 @@ opt.breakindent = true
 -- Virtual line mark
 opt.showbreak = ">>>"
 
--- ShowBreak >>> Different Color
-vim.api.nvim_set_hl(0, "ShowBreak", { fg = "#FF5733", bold = true})
-vim.cmd[[highlight link ShowBreak NonText]]
-
-opt.timeoutlen = 100
