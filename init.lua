@@ -1,4 +1,4 @@
-require('/settings')
-require('/plugins')
-require('/customcommands')
-require('/keybinds')
+require('config/settings')
+require('config/plugins')
+require('config/customcommands')
+require('config/keybinds')
