@@ -39,5 +39,3 @@ keymap.set('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
 keymap.set('n', '<leader>o', '<C-w>o', { noremap = true, silent = true })
 
 
-
-
